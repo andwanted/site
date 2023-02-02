@@ -1,0 +1,80 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+
+.menu {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	background-color: rgb(37, 37, 39);
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	display: inline-block;
+}
+
+.menu ul li {
+	position: relative;
+	margin: 0 0 0 0;
+	float: left;
+	display: inline-block;
+}
+
+.menu li>a:after {
+	content: ' »';
+}
+
+/* Change this in order to change the Dropdown symbol */
+
+.menu li>a:only-child:after {
+	content: '';
+}
+
+.menu ul li a {
+	padding: 20px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	transition: background .4s;
+}
+
+.menu ul li a:hover {
+	background-color: rgb(24, 139, 233);
+}
+
+.menu ul li ul {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: rgb(37, 37, 39);
+	float: left;
+}
+
+.menu ul li ul li {
+	width: 100%;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.menu ul li:hover ul {
+	display: block;
+	width: 100%;
+}
